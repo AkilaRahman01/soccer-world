@@ -174,7 +174,7 @@ article {
     }
     .top-section{
         height: 700px;
-        width: 360px;
+        width: 320px;
         margin: 0px;
     }
 
@@ -188,9 +188,9 @@ article {
         
         row-gap: 30px;
         flex-direction: row;
-        width: 280px;
+        width: 270px;
         padding: 0px 10px;
-        margin: 0px 10px;
+        margin: 0px 15px;
                 
     }
     .top-banner, .players, .player-info{
