@@ -202,6 +202,129 @@ article {
     height: 427px;
 }
 
+/* Livestream Section */
+
+.livestream-section {
+    margin-top: 165px;
+    width: 1164px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ .livestream-info{
+   display: flex;
+ 
+}
+.livestream-left {
+    width: 50%;
+}
+.livestream-left h2 {
+   margin-top: 71px;
+   color: #0A0826;
+   font-size: 48px;
+   line-height: 60px;
+}
+.livestream-left p {
+   color: #6C6C6C;
+   font-size: 16px;
+}
+
+.livestream-left a:hover {
+    background: #e02c6e00;
+    color: rgb(58, 58, 58);
+}
+
+.livestream-left i {
+    margin-left: 5px;
+}
+.livestream-right {
+    padding-left: 66px;
+}
+ .livestream-right img{
+    width: 567px;
+    height: 427px;
+}
+
+.livestream-video{
+    width: 567px;
+    height: 427px;
+
+}
+
+/* Gallery Section */
+
+.gallery-section,
+{
+  padding: 5rem 0;
+}
+.gallery-section h2{
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  color: #004478;
+  font-weight: 300;
+}
+
+.gallery-image {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 5px;
+  margin: 10px 10px;
+}
+
+.img-hover-zoom {
+  overflow: hidden;
+}
+
+.img-hover-zoom img {
+  transition: transform 0.5s ease;
+}
+
+.img-hover-zoom:hover img {
+  transform: scale(1.3);
+}
+
+.gallery-image img
+{
+  width: 500px;
+  height: 400px;
+}
+
+/* Footer Bar */
+
+footer{
+    margin-top: 120px; 
+ }
+ footer .container{
+     width: 1164px;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     text-align: center;
+ }
+ footer img{
+    display: inline-block;
+    width: 300px;
+    height: 100px;
+    
+ }
+.fab{
+    margin-top: 20px;
+    padding: 0 7px;
+    color: rgb(124, 124, 124);
+    transition: .3s linear;
+    margin-bottom:20px;
+    
+ }
+ footer p{
+   font-size: 15px;
+   font-weight: normal;
+   margin-bottom: 63px;
+
+ 
+ }
+
 
 
 
@@ -253,18 +376,28 @@ article {
 
         /* padding: 0px 30px;
         width: 300px; */
+        /* width: 278px;
+        height: 100px; */
         width: 278px;
-        height: 100px;
+        height: 138px;
         padding-left: 16px;
+        /* top: 112px; */
+
+        /* padding-left: 16px; */
        
 
     }
      .top-heading h2{
         
-        font-style: normal;
+        /* font-style: normal;
         font-weight: bold;
         font-size: 60px;
-        line-height: 65px;
+        line-height: 65px; */
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 45px;
+        line-height: 50px;
        
         
 
@@ -272,10 +405,14 @@ article {
     .top-picture img{
         /* width: 300px;
         height: 240px;  */
-        width: 400px;
+        /* width: 400px;
         height: 300px;
         padding-left: 30px;
-        padding-top: 320px;
+        padding-top: 320px; */
+        width: 329px;
+        height: 259.17px;
+        padding-left: 50px;
+        padding-top: 274px;
 
         /* padding-top: 50px;
         padding-left: 15px;
