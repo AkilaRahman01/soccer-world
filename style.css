@@ -377,8 +377,8 @@ footer{
      
     }
      .top-heading{
-        width: 278px;
-        height: 138px;
+        /* width: 278px;
+        height: 138px; */
         padding-left: 16px;
        
 
@@ -424,8 +424,11 @@ footer{
     }
     .highlights-left h2{
         font-weight: bold;
-        font-size: 34px;
-        line-height: 45px;
+        font-size: 30px;
+        line-height: 40px;
+
+        width: 294px;
+        height: 80px;
 
     }
    .livestream-right {
