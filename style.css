@@ -1,14 +1,8 @@
-/* fonts */
+/*------------------- 
+---------fonts
+------------------------ */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
-/* Basic css */
-
-/* * {
-    margin: 0;
-    padding: 0;
-   
-
-} */
 html {
     font-size: 62.5%;
     overflow-x: hidden;
@@ -33,7 +27,9 @@ p {
     margin: 0;
     padding: 0;
 }
-/* Top Section */
+/*--------------------------
+----------- Top Section-----
+---------------------------- */
 
 .top-section {
     background: #2D25A0;
@@ -48,7 +44,7 @@ p {
 
 
 .top-banner {
-    width: 1164px;
+    
     
     margin-left: auto;
     margin-right: auto;
@@ -61,7 +57,7 @@ p {
     width: 50%;
 }
 .top-section .container  {
-    padding-bottom: 200px;
+    padding-bottom: 120px;
 
 }
 
@@ -115,12 +111,14 @@ p {
     }
 }
 
-/* Players Section */
+/* ------------------
+-----------Players Section------
+----------------------------- */
 
 
 .players-section .container {
     width: 1053px;
-    display: block;
+    /* display: block; */
     margin-left: auto;
     margin-right: auto;
     margin-top: 70px;
@@ -140,7 +138,7 @@ article {
     box-shadow: 0px 0px 20px grey;
 }
 .player img {
-    width: 300px;
+    width: 100%;
     height: 256px;
     cursor: pointer;
 }
@@ -149,9 +147,6 @@ article {
     font-size: 30px;
     font-weight: bold;
 }
-.player-info{
-    padding: 20px 20px;
-}
 
 .player p {
     color: #6C6C6C;
@@ -159,7 +154,9 @@ article {
     text-align:justify;
 }
 
-/* Highlights Section */
+/* ----------------
+--------Highlights Section----------
+--------------------------------- */
 
 .highlights-section {
     margin-top: 80px;
@@ -200,56 +197,10 @@ article {
     height: 427px;
 }
 
-/* Livestream Section */
 
-/* .livestream-section{
-    margin-top: 50px;
-    width: 1164px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
- .livestream-info{
-   display: flex;
- 
-}
-.livestream-left {
-    width: 50%;
-}
-.livestream-left h2 {
-   margin-top: 50px;
-   color: #0A0826;
-   font-size: 48px;
-   line-height: 60px;
-}
-.livestream-left p {
-   color: #6C6C6C;
-   font-size: 25px;
-}
-
-.livestream-left a:hover {
-    background: #e02c6e00;
-    color: rgb(58, 58, 58);
-}
-
-.livestream-left i {
-    margin-left: 5px;
-}
-.livestream-right {
-    padding-left: 66px;
-}
- .livestream-right img{
-    width: 567px;
-    height: 427px;
-}
-
-.livestream-video{
-    width: 567px;
-    height: 427px;
-
-} */
-/* Livestream Section */
+/*---------------------------------
+-------- Livestream Section--------------
+------------------------------------ */
 
 .livestream-section {
     margin-top: 80px;
@@ -292,12 +243,10 @@ article {
 
 }
 
-/* Gallery Section */
+/* ----------------------------------
+-----------Gallery Section----------
+----------------------------------- */
 
-.gallery-section,
-{
-  padding: 50px 10px;
-}
 .gallery-section h2{
   font-size: 56px;
   text-align: center;
@@ -327,18 +276,20 @@ article {
 
 .gallery-image img
 {
-  width: 500px;
+  width: 100%;
   height: 400px;
 }
 
-/* Footer Bar */
+/*--------------------------
+---- Footer Section--------
+------------------------- */
 
 footer{
     margin-top: 100px; 
  }
  footer .container{
      /* width: 1164px; */
-     /* display: block; */
+     display: block;
      /* margin-left: auto;
      margin-right: auto; */
      text-align: center;
@@ -378,40 +329,25 @@ footer{
 
 
  /* Media Queries */
- /* For Mobile-S(375px) */
- @media only screen and (max-width:688px) {
+ /* For Mobile View */
+ @media only screen and (min-device-width: 320px) 
+ and (max-device-width: 480px) {
     .container{
         width: 100%;
        
     }
     .top-section, .container, .highlights-section, .livestream-section, .gallery-section{
         grid-template-columns: repeat(1, 1fr);
-        
-    
-        
     }
     footer, .footer-section{
         width: 400px;
 
     }
-    /* .top-section, .highlights-section{
-        height: 695px;
-        width: 475px;
-        margin: 0px;
-    } */
-
-    /* article{
-        grid-template-columns: repeat(1, 1fr);
-
-    } */
 
     .top-banner, .players, .player-info, .highlights-info, .livestream-info{
         
         flex-direction: column;
     }
-    /* .gallery,.gallery-image{
-        flex-direction: row;
-    } */
     .gallery-image {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -423,10 +359,6 @@ footer{
         width: 100%;
         height: 250px;
         padding-bottom: 5px;
-        /* padding-left: 10px;
-        padding-top: 10px; */
-        /* padding: 10px 10px; */
-        /* padding-right: 5px; */
       }
     article {
         display: grid;
@@ -436,35 +368,23 @@ footer{
         flex-direction: row;
         width: 330px;
         padding: 0px 15px;
-        margin: 0px 20px;
+        margin: 0px 30px;
                 
     }
     .top-section, .highlights-section{
         height: 780px;
         width: 475px;
-        /* margin: 0px; */
+     
     }
      .top-heading{
-
-        /* padding: 0px 30px;
-        width: 300px; */
-        /* width: 278px;
-        height: 100px; */
         width: 278px;
         height: 138px;
         padding-left: 16px;
-        /* top: 112px; */
-
-        /* padding-left: 16px; */
        
 
     }
      .top-heading h2{
         
-        /* font-style: normal;
-        font-weight: bold;
-        font-size: 60px;
-        line-height: 65px; */
         font-family: Poppins;
         font-style: normal;
         font-weight: bold;
@@ -475,33 +395,16 @@ footer{
 
     }  
     .top-picture img{
-        /* width: 300px;
-        height: 240px;  */
-        /* width: 400px;
-        height: 300px;
-        padding-left: 30px;
-        padding-top: 320px; */
         width: 329px;
         height: 259.17px;
         padding-left: 50px;
         padding-top: 274px;
-
-        /* padding-top: 50px;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-bottom: 70px; */
-         /* padding: 80px 15px;
-        margin: 0px; */
     }
-     /* .top-button{
-        margin-top: 10px;
-    }  */
+
     .player-info img {
         
         width: 300px;
         height: 256px;
-        
-        
     }
     .highlights-left{
         width: 329px;
@@ -509,27 +412,14 @@ footer{
         margin: 0px 15px;
         padding-left: 25px;
         left: 0px;
-        top: 0px;   /* display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 0px;
-
-       
-        width: 280px;
-        margin: 24px 0px;
-        padding: 30px 15px; */
+        top: 0px;   
     }
-    /* .highlights-left p{
-        padding-bottom: 20px;
-    } */
+   
     .highlights-right img{
         width: 328px;
         height: 250px;
         padding-left: 10px;
         padding-top: 10px;
-        /* padding-right: 50px; */
-        /* margin: 0px 10px; */
-        /* align-items: center; */
        
     }
     .highlights-left h2{
@@ -539,42 +429,19 @@ footer{
 
         width: 294px;
         height: 80px;
-        /* left: 0px;
-        top: 0px; */
 
     }
-
-    
-
-
-    .livestream-right {
+   .livestream-right {
         width: 329px;
         height: 350px;
         margin: 0px 15px;
         padding-left: 25px;
-        left: 0px;
-        top: 0px;   /* display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 0px;
-
-       
-        width: 280px;
-        margin: 24px 0px;
-        padding: 30px 15px; */
+    
     }
-    /* .livestream-right  p{
-        padding-bottom: 20px;
-    } */
     .livestream-video{
         width: 400px;
         height: 250px;
         padding: 0px 15px;
-        /* padding-left: 25px; */
-        /* padding-right: 50px; */
-        /* margin: 0px 10px; */
-        /* align-items: center; */
-       
     }
     .livestream-right h2{
         font-weight: bold;
@@ -587,14 +454,6 @@ footer{
         top: 0px;
 
     }
-
-    /* footer .container{
-        width: 1164px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    } */
     footer img{
        display: inline-block;
        width: 200px;
@@ -608,8 +467,6 @@ footer{
       
       margin-bottom: 30px;
       text-align: center;
-      /* padding-left: 10px ; */
-   
     
     }
    
@@ -620,4 +477,145 @@ footer{
 }
 
 
+
+/*--------------------------------
+--- Media Query For Tab-View------
+------------------------------------- */
+@media only screen and (min-device-width: 481px) 
+  and (max-device-width: 768px) {
+  ction, .container, .highlights-section, .livestream-section{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+ }
+    footer, .footer-section{
+        width: 700px;
+
+    }
+
+    .top-banner, .players, .player-info, .highlights-info, .livestream-info{
+        
+        flex-direction: row;
+    }
+    .gallery-image {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: row;
+       
+      }
+      .gallery h2{
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 35px;
+        text-align: center;
+ }
+
+      .gallery-image img{
+        width: 100%;
+        height: 250px;
+        padding-bottom: 5px;
+        
+      }
+    article {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+        row-gap: 30px;
+        flex-direction: row;
+        padding: 0px 10px;
+        margin: 0px 15px;
+                
+    }
+     .top-heading{
+         width: 320px;
+        height: 450px;
+        padding-left: 40px;
+    }
+     .top-heading h2{
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 60px;
+    }  
+    .top-picture img{
+        
+        width: 350px;
+        height: 300px;
+        padding-left: 50px;
+        padding-top: 74px;
+    }
     
+    .player-info img {
+        
+        width: 320px;
+        height: 256px;
+ }
+    .highlights-left{
+        width: 329px;
+        height: 350px;
+        margin: 0px 15px;
+        padding-left: 25px;
+        left: 0px;
+        top: 0px;  
+    }
+    
+    .highlights-right img{
+        width: 340px;
+        height: 300px;
+        padding-right: 10px;
+        padding-top: 20px;
+        
+    }
+    .highlights-left h2{
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 35px;
+
+        width: 294px;
+        height: 80px;
+        
+
+    }
+    .livestream-right {
+        width: 329px;
+        height: 350px;
+        margin: 0px 15px;
+        padding-left: 25px;
+        left: 0px;
+        top: 0px;   
+    }
+    
+    .livestream-video{
+        width: 400px;
+        height: 350px;
+        padding: 0px 15px;
+        
+       
+    }
+    .livestream-right h2{
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 35px;
+
+        width: 294px;
+        height: 80px;
+    }
+
+   
+    footer img{
+       display: inline-block;
+       width: 200px;
+       height: 70px;
+       padding-left: 40px;
+       
+    }
+
+    footer p{
+      font-size: 15px;
+      
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+}
+
